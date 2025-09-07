@@ -14,7 +14,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {// Configure the DbContext to use SQL Server with the connection string from configuration
     // The connection string is typically defined in appsettings.json or environment variables
     // Replace "DefaultConnection" with the actual name of your connection string
-    options.UseSqlServer();
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
    
 // Add services to the container.
