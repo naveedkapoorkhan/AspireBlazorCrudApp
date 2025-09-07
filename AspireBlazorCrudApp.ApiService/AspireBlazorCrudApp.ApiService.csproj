@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AspireBlazorCrudApp.BL\AspireBlazorCrudApp.BL.csproj" />
+    <ProjectReference Include="..\AspireBlazorCrudApp.Database\AspireBlazorCrudApp.Database.csproj" />
     <ProjectReference Include="..\AspireBlazorCrudApp.Model\AspireBlazorCrudApp.Model.csproj" />
     <ProjectReference Include="..\AspireBlazorCrudApp.ServiceDefaults\AspireBlazorCrudApp.ServiceDefaults.csproj" />
   </ItemGroup>
@@ -17,6 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.4" />
   </ItemGroup>
