@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AspireBlazorCrudApp.BL\AspireBlazorCrudApp.BL.csproj" />
+    <ProjectReference Include="..\AspireBlazorCrudApp.Model\AspireBlazorCrudApp.Model.csproj" />
     <ProjectReference Include="..\AspireBlazorCrudApp.ServiceDefaults\AspireBlazorCrudApp.ServiceDefaults.csproj" />
   </ItemGroup>
 

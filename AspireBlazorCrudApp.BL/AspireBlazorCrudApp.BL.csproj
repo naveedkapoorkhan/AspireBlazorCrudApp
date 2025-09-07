@@ -11,4 +11,9 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AspireBlazorCrudApp.Database\AspireBlazorCrudApp.Database.csproj" />
+    <ProjectReference Include="..\AspireBlazorCrudApp.Model\AspireBlazorCrudApp.Model.csproj" />
+  </ItemGroup>
+
 </Project>
